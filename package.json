@@ -1,53 +1,61 @@
 {
-    "name": "wg-getters-and-setters",
-    "displayName": "TypeScript's Getters and Setters Object Oriented Programming Style",
-    "description": "Automatic generate getters and setters",
-    "version": "2.0.0",
-    "publisher": "Wilson-Godoi",
-    "author": "Wilson Godoi <wilsonggodoi@gmail.com>",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/WilsonGodoi/generate-getters-setters"
-    },
-    "bugs": {
-        "url": "https://github.com/WilsonGodoi/generate-getters-setters/issues"
-    },
-    "icon": "images/icon.png",
-    "engines": {
-        "vscode": "^1.25.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:extension.generateGettersAndSetters",
-        "onCommand:extension.generateGettersAndSettersES6"
-    ],
-    "main": "./out/extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.generateGettersAndSetters",
-                "title": "Generate Getters and Setters"
-            },
-            {
-                "command": "extension.generateGettersAndSettersES6",
-                "title": "Generate Getters and Setters ES6"
-            }
-        ]
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
-        "tslint": "^5.8.0",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
-    }
+  "name": "wg-getters-and-setters",
+  "displayName": "TypeScript's Getters and Setters Object Oriented Programming Style",
+  "description": "Automatic generate getters and setters",
+  "version": "2.0.1",
+  "publisher": "suancarloj",
+  "author": "Juan Carlos Sanchez Cardenas <jcsanchezcardenas@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suancarloj/generate-getters-setters"
+  },
+  "bugs": {
+    "url": "https://github.com/suancarloj/generate-getters-setters/issues"
+  },
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.25.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.generateGettersAndSetters",
+    "onCommand:extension.generateGettersAndSettersES6"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.generateGettersAndSetters",
+        "title": "Generate Getters and Setters"
+      },
+      {
+        "command": "extension.generateGettersAndSettersES6",
+        "title": "Generate Getters and Setters ES6"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.5",
+    "vscode": "^1.1.37",
+    "tslint": "^6.1.3",
+    "@types/node": "^14.14.28",
+    "@types/mocha": "^8.2.0"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 80,
+    "arrowParens": "always"
+  }
 }

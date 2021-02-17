@@ -1,3 +1,7 @@
+Fork of https://github.com/WilsonGodoi/generate-getters-setters
+
+that removes the `?` at the end of the getters, setters and return `type | undefined` if the optionnal is present.
+
 # Generate getters and setters for Visual Studio Code
 
 Generate getters and setters for your Typescript class properties.
